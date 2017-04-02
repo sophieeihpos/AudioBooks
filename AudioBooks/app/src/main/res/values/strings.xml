@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">AudioBooks</string>
+    <string name="text_book1">Alice\'s Adventures in Wonderland</string>
+    <string name="text_book2">The Little Prince</string>
+    <string name="text_book3">Gone with the Wind</string>
+    <string name="text_episode1">Episode 1</string>
+    <string name="text_episode2">Episode 2</string>
+    <string name="text_episode3">Episode 3</string>
+    <string name="text_episode4">Episode 4</string>
+    <string name="text_episode5">Episode 5</string>
+    <string name="button_add_to_list">add to my play list</string>
+    <string name="button_play">I> play</string>
+    <string name="mylibrary_activity">My Library</string>
+    <string name="play_activity">Playing</string>
+    <string name="playlist_activity">My Play List</string>
+    <string name="button_previous">&lt;</string>
+    <string name="button_next">></string>
+    <string name="button_show_playlist">Show My Play List</string>
+
+    <string name="list_item1">The Little Prince Episode 3</string>
+    <string name="list_item2">Gone with the Wind Episode 1</string>
+    <string name="list_item3">Gone with the Wind Episode 2</string>
+    <string name="list_item4">Alice\'s Adventures in Wonderland Episode 4</string>
+    <string name="button_delete_from_list">Delete from my play list</string>
+    <string name="button_add_from_library">Add items from my library</string>
+    <string name="button_import">Import</string>
+
+    <string name="description_main">This activity provides a list all the audio books available in the user\'s library. Clicking on a book title brings
+        the user to a list of audio files under the title. The importing function will be developed to allow importing from a local directory (folder).
+        However, this will require accessing and storing data of local files. The File class will be used.
+    </string>
+    <string name="description_episodes">This activity provides a list of audio files available from each book. Clicking on the play button brings the user
+        to the play interface where the audio files are supposed to be played. By ticking episodes, the app should be able to store the data as a play list.
+        By clicking on the play or add button, the play list shall be created. These functions will be developed later on. The SharedPreferences class will be used.
+    </string>
+    <string name="description_play">This activity is to be developed for playing audio files on the play list shown. MediaPlayer API will be used to enable
+        this function. The seek bar is to be set to indicate the timeline when playing an audio file. Clicking on the backward button, the activity would start to play the previous audio file on the list. Clicking
+    on the forward button, the activity would start to play the next audio file on the list. This will need access to the SharedPreferences and a loop to go
+        forward and backward in the data. Currently, clicking on the show button will bring the user to the play list activity.
+    </string>
+    <string name="description_playlist">This activity would allow the user to delete selected files from the play list, in the future. This will require editing
+        the SharedPreferences. At the moment, clicking on the add button brings the user back to the book library.</string>
+</resources>

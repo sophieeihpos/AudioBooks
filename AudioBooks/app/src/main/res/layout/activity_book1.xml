@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_book1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.com.example.android.audiobooks.Book1Activity"
+    android:orientation="vertical"
+    android:background="#FFCDD2">
+    <TextView
+        style="@style/description"
+        android:text="@string/description_episodes"/>
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:text="@string/text_episode1"
+                style="@style/CheckBox"/>
+            <CheckBox
+                android:text="@string/text_episode2"
+                style="@style/CheckBox"/>
+            <CheckBox
+                android:text="@string/text_episode3"
+                style="@style/CheckBox"/>
+            <CheckBox
+                android:text="@string/text_episode4"
+                style="@style/CheckBox"/>
+            <CheckBox
+                android:text="@string/text_episode5"
+                style="@style/CheckBox"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:text= "@string/button_add_to_list"
+        style="@style/Button"/>
+    <Button
+        android:text="@string/button_play"
+        android:id="@+id/button_play1"
+        style="@style/Button"/>
+</LinearLayout>

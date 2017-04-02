@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.com.example.android.audiobooks.PlayActivity"
+    android:orientation="vertical"
+    android:background="#FFCDD2">
+
+    <TextView
+        style="@style/description"
+        android:text="@string/description_play"
+        android:id="@+id/textView"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            style="@style/ListItems"
+            android:text="@string/list_item1"/>
+        <TextView
+            style="@style/ListItems"
+            android:text="@string/list_item2"/>
+        <TextView
+            style="@style/ListItems"
+            android:text="@string/list_item3"/>
+        <TextView
+            style="@style/ListItems"
+            android:text="@string/list_item4"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_previous"
+            android:textColor="#424242"
+            tools:ignore="ButtonStyle"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_play"
+            android:layout_weight="1"
+            android:textColor="#424242"
+            tools:ignore="ButtonStyle"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_next"
+            android:textColor="#424242"
+            tools:ignore="ButtonStyle"/>
+    </LinearLayout>
+
+    <Button
+        android:text="@string/button_show_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/goto_playlist"
+        android:textColor="#424242"/>
+</LinearLayout>
